@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Java Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <pre id="htmlCode">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Editor</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div class="container">
+                <h1>Editor de Java Online</h1>
+                <textarea id="areaDeCodigo" placeholder="Digite seu código Java aqui..."></textarea>
+                <div class="button-container">
+                    <button id="Executar">Executar</button>
+                    <button id="limpar">Limpar</button>
+                </div>
+                <div id="saida">
+                    <strong>Saída:</strong>
+                    <pre id="textoDeSaida">Nenhuma saída gerada ainda.</pre>
+                </div>
+            </div>
+            <aside class="sidebar">
+                <h2>Informações úteis</h2>
+                <p>- Use <code>System.out.println()</code> para exibir saída.</p>
+                <p>- A linguagem Java é case-sensitive.</p>
+                <p>- Classes devem ter o mesmo nome do arquivo.</p>
+                <p>- Métodos em Java devem estar dentro de uma classe.</p>
+            </aside>
+        </div>
+        <address class="rodape">
+            <p>Editor de java online</p>
+            <p>INE5646</p>
+            <p>Desenvolvimentos de aplicação web</p>
+            <p>link</p>
+        </address>
+    </pre>
+    <script>
+        document.getElementById("htmlCode").textContent = document.documentElement.outerHTML;
+    </script>
+</body>
+</html>
